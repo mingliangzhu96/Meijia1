@@ -1446,26 +1446,43 @@
 				}
 
 /* Banner */
-	.animated-text {
-		position: relative;
-		animation-name: neonGlow;
-		animation-duration: 2s;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
+.animated-text {
+	position: relative;
+	display: inline-block;
+	font-family: 'Arial', sans-serif;
+	font-size: 36px;
+	color: #ffffff; /* Color blanco */
+	animation-name: shake;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+	0% {
+	  transform: translateX(0);
 	}
+	25% {
+	  transform: translateX(-5px);
+	}
+	75% {
+	  transform: translateX(5px);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+  }
+  
 	
-	@keyframes neonGlow {
+	@keyframes underline {
 		0% {
-		text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 30px #ff00e4, 0 0 40px #ff00e4, 0 0 50px #ff00e4, 0 0 60px #ff00e4, 0 0 70px #ff00e4;
-		}
-		50% {
-		text-shadow: none;
+		transform: scaleX(0);
 		}
 		100% {
-		text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 30px #ff00e4, 0 0 40px #ff00e4, 0 0 50px #ff00e4, 0 0 60px #ff00e4, 0 0 70px #ff00e4;
+		transform: scaleX(1);
 		}
 	}
-	
+  
 		
 
 
@@ -1548,7 +1565,7 @@
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
 			padding: 0;
-			color: rgba(243, 2, 135, 0.281);
+			color:rgb(164 227 251 / 90%);
 			font-family: "Henny Penny" , sans-serif;
 
 			
@@ -1558,7 +1575,7 @@
 			font-size: 1.5em;
 			margin-bottom: 1.75em;
 			font-family: "Henny Penny" , sans-serif;
-			color: rgb(247, 52, 159);
+			color:rgb(164 227 251 / 90%);
 
 		}
 

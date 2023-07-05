@@ -1,6 +1,5 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600");
-
 /*
 	Snapshot by TEMPLATED
 	templated.co @templatedco
@@ -16,6 +15,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -169,6 +169,7 @@
 		font-weight: 700;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
+		
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -178,12 +179,16 @@
 
 	h1 {
 		font-size: 2em;
+
+		
+
 	}
 
 		@media screen and (max-width: 480px) {
 
 			h1 {
 				font-size: 1.5em;
+			
 			}
 
 		}
@@ -1394,7 +1399,7 @@
 	}
 
 /* Menu */
-
+	
 	#nav {
 		background: #0d1217;
 		z-index: 10002;
@@ -1441,6 +1446,28 @@
 				}
 
 /* Banner */
+	.animated-text {
+		position: relative;
+		animation-name: neonGlow;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	}
+	
+	@keyframes neonGlow {
+		0% {
+		text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 30px #ff00e4, 0 0 40px #ff00e4, 0 0 50px #ff00e4, 0 0 60px #ff00e4, 0 0 70px #ff00e4;
+		}
+		50% {
+		text-shadow: none;
+		}
+		100% {
+		text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 30px #ff00e4, 0 0 40px #ff00e4, 0 0 50px #ff00e4, 0 0 60px #ff00e4, 0 0 70px #ff00e4;
+		}
+	}
+	
+		
+
 
 	body.is-loading #banner > .inner {
 		opacity: 0;
@@ -1521,12 +1548,18 @@
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
 			padding: 0;
-			color: #FFF;
+			color: rgba(243, 2, 135, 0.281);
+			font-family: "Henny Penny" , sans-serif;
+
+			
 		}
 
 		#banner p {
 			font-size: 1.5em;
 			margin-bottom: 1.75em;
+			font-family: "Henny Penny" , sans-serif;
+			color: rgb(247, 52, 159);
+
 		}
 
 		#banner a {
@@ -1537,7 +1570,8 @@
 		@media screen and (max-width: 1280px) {
 
 			#banner h1 {
-				font-size: 3.5em;
+				font-size: 3.5em;			
+
 			}
 
 		}
